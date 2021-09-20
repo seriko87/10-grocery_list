@@ -1,13 +1,145 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f1f5f8;
+  letter-spacing: 2px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main {
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  display: grid;
+  row-gap: 10px;
+  margin: auto;
+  margin-top: 5rem;
+  transition: all 0.3s linear;
+  border-radius: 0.25rem;
+}
+
+main:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  color: #063251;
+  text-align: center;
+}
+
+input {
+  height: 30px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  background-color: #f1f5f8be;
+  width: 100%;
+  padding-left: 10px;
+}
+input:focus {
+  outline: none;
+  background-color: #e5e9ec;
+}
+form {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+form button {
+  width: 100px;
+  border: none;
+  background-color: #a5d5f8;
+  border-radius: 0 5px 5px 0;
+  letter-spacing: 2px;
+}
+form button:hover {
+  background-color: #2d87c8;
+  color: white;
+  cursor: pointer;
+}
+
+.items {
+  margin: 5px;
+  font-size: 18px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  transition: ease-in-out 0.3s;
+  letter-spacing: 2px;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+}
+.items:hover {
+  background-color: #f1f5f8;
+}
+.list {
+  display: grid;
+  padding: 0 10px 0 10px;
+}
+
+.list-item {
+  width: 100%;
+}
+
+.btn-edit {
+  background-color: transparent;
+  color: rgba(0, 128, 0, 0.651);
+  border: none;
+}
+
+.btn-delete {
+  background-color: transparent;
+  color: rgba(255, 0, 0, 0.651);
+  border: none;
+}
+.btn-edit:hover {
+  color: rgb(0, 128, 0);
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.clearAll {
+  width: fit-content;
+  margin: 1rem auto 1rem auto;
+  border: none;
+  background-color: transparent;
+  color: rgb(165, 29, 29);
+  transition: ease-in-out 0.3s;
+  letter-spacing: 2px;
+}
+.clearAll:hover {
+  cursor: pointer;
+  color: rgb(201, 41, 41);
+}
+
+.alertsGreen {
+  background-color: rgba(123, 207, 123, 0.349);
+  margin: auto;
+  margin-top: 1rem;
+  width: 50%;
+  text-align: center;
+  color: rgb(7, 37, 7);
+  border-radius: 0.25rem;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.alertsRed {
+  background-color: rgba(207, 123, 123, 0.349);
+  margin: auto;
+  margin-top: 1rem;
+  width: 50%;
+  text-align: center;
+  color: rgb(37, 7, 7);
+  border-radius: 0.25rem;
+  font-size: 12px;
+  line-height: 1.5;
 }
